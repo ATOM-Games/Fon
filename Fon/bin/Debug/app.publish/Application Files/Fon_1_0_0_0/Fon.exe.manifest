@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Fon.exe" version="1.0.0.0" publicKeyToken="17a331192af70a5f" language="neutral" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="favicon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Fon" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="Fon.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel node will disable file and registry virtualization.
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Fon.exe" size="45056">
+      <assemblyIdentity name="Fon" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>Z20L/vVFttEoFhAP799Y/ChdeW8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="favicon.ico" size="9662">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>LlWrEsuUZImts/9rhFo6D+ZS1f0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of all Windows versions that this application is designed to work with. Windows will automatically select the most compatible environment.-->
+      <!-- If your application is designed to work with Windows 7, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=LAPTOP-O89M7GP4\user" issuerKeyHash="1ff6dcdca27dc9ed2f81c9a0cb417e09e0764b37" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>LmbddNNlmKdbdNdBXo9hhHPp8dw=</DigestValue></Reference></SignedInfo><SignatureValue>nDFEf5RU1rqkA2L1mZiEFFkDa8uti86D/MjwGt1EFjJvuErJeZOwIL9ERU4iD2Tkaz/dGL2cwr/QcpWoDkkNl7G3AVVSZKkOlGyv20GldloXZHsf9gRZvQZlmIhMTAaj6YVH7WSgK33zvSKbGwaqAjwK0eqUIRGWJ8a1zkb/XqU=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>wLBFZZMAVGAjg4VlgZJsBOIC+IOli3Yt/PLBb8fVvWmJdaZIdekMH7z8br02Uznm1FqpLMk4rsMQtzD1aK26xsDzyTkaFVCudUhMlqwjDpNT3FMnlu6MP/l9u1/gWOi6j/AI50oH8QdGZUDQTZh8ubwHag5yx6p5qW7qgiusB5U=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="dcf1e97384618f5e41d7745ba79865d374dd662e" Description="" Url=""><as:assemblyIdentity name="Fon.exe" version="1.0.0.0" publicKeyToken="17a331192af70a5f" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=LAPTOP-O89M7GP4\user</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>SCUdh1yzOE/krXbOEztMCmrtJMg=</DigestValue></Reference></SignedInfo><SignatureValue>mpho48GQR1sWPPpjKf26z+GEXQj7mZ3BpjwfrFJJd/1FWzdvVBMnBFi1PoLBHXQTwmGIXF1eaXJOkNw/ySdAE3DRJq0kCz745/EGiUTk1YkQlB4UlYdSGes6BaV+N5fJhmBMvVSIHpGyz+jR1GjI8/eUE9Ns40yQxaG2/tHOfhE=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>wLBFZZMAVGAjg4VlgZJsBOIC+IOli3Yt/PLBb8fVvWmJdaZIdekMH7z8br02Uznm1FqpLMk4rsMQtzD1aK26xsDzyTkaFVCudUhMlqwjDpNT3FMnlu6MP/l9u1/gWOi6j/AI50oH8QdGZUDQTZh8ubwHag5yx6p5qW7qgiusB5U=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQaj38ZEs4wrRGXXiYSdlclTANBgkqhkiG9w0BAQUFADAzMTEwLwYDVQQDHigATABBAFAAVABPAFAALQBPADgAOQBNADcARwBQADQAXAB1AHMAZQByMB4XDTE5MTExMDA5NDUwNFoXDTIwMTEwOTE1NDUwNFowMzExMC8GA1UEAx4oAEwAQQBQAFQATwBQAC0ATwA4ADkATQA3AEcAUAA0AFwAdQBzAGUAcjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAwLBFZZMAVGAjg4VlgZJsBOIC+IOli3Yt/PLBb8fVvWmJdaZIdekMH7z8br02Uznm1FqpLMk4rsMQtzD1aK26xsDzyTkaFVCudUhMlqwjDpNT3FMnlu6MP/l9u1/gWOi6j/AI50oH8QdGZUDQTZh8ubwHag5yx6p5qW7qgiusB5UCAwEAATANBgkqhkiG9w0BAQUFAAOBgQBKzb848l/60bzWqPko6QUUx5pA2xY1BnTa6HCyABqFaTc0NQjhZckmvoFUez9KOLsD86cRYt2nHYyuF6JISIIiiWIRb9BM+gibeH+4XcNRNcbMejpcSgUGcdeyQAR5Ztx00bfNil8e3blFpPnZxJlDoLgPuH25fjhpPyqJI//4vA==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

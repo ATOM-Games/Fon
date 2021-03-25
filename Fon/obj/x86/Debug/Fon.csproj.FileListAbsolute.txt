@@ -1,0 +1,39 @@
+C:\Users\Home\AppData\Local\Temporary Projects\Fon\bin\Debug\Fon.exe
+C:\Users\Home\AppData\Local\Temporary Projects\Fon\bin\Debug\Fon.pdb
+C:\Users\Home\AppData\Local\Temporary Projects\Fon\obj\x86\Debug\Fon.Properties.Resources.resources
+C:\Users\Home\AppData\Local\Temporary Projects\Fon\obj\x86\Debug\Fon.csproj.GenerateResource.Cache
+C:\Users\Home\AppData\Local\Temporary Projects\Fon\obj\x86\Debug\Fon.exe
+C:\Users\Home\AppData\Local\Temporary Projects\Fon\obj\x86\Debug\Fon.pdb
+C:\Users\Home\AppData\Local\Temporary Projects\Fon\obj\x86\Debug\Fon.Group.resources
+C:\Users\Home\AppData\Local\Temporary Projects\Fon\obj\x86\Debug\Fon.MyTable.resources
+C:\Users\Home\documents\visual studio 2010\Projects\Fon\Fon\obj\x86\Debug\Fon.exe
+C:\Users\Home\documents\visual studio 2010\Projects\Fon\Fon\obj\x86\Debug\Fon.pdb
+C:\Users\Home\Documents\Visual Studio 2010\Projects\Fon\Fon\bin\Debug\Fon.exe
+C:\Users\Home\Documents\Visual Studio 2010\Projects\Fon\Fon\bin\Debug\Fon.pdb
+C:\Users\Home\Documents\Visual Studio 2010\Projects\Fon\Fon\obj\x86\Debug\Fon.MyTable.resources
+C:\Users\Home\Documents\Visual Studio 2010\Projects\Fon\Fon\obj\x86\Debug\Fon.Properties.Resources.resources
+C:\Users\Home\Documents\Visual Studio 2010\Projects\Fon\Fon\obj\x86\Debug\Fon.csproj.GenerateResource.Cache
+C:\Users\Home\documents\visual studio 2010\Projects\Fon\Fon\obj\x86\Debug\Fon.csprojResolveAssemblyReference.cache
+C:\Users\Home\documents\visual studio 2010\Projects\Fon\Fon\obj\x86\Debug\Fon.Gropupa.resources
+C:\Users\Home\documents\visual studio 2010\Projects\Fon\Fon\obj\x86\Debug\Fon.Component.resources
+C:\Users\Home\documents\visual studio 2010\Projects\Fon\Fon\obj\x86\Debug\Fon.AddComp.resources
+C:\Users\Home\documents\visual studio 2010\Projects\Fon\Fon\obj\x86\Debug\Fon.AddGrop.resources
+C:\Users\user\Documents\Visual Studio 2010\Projects\Fon\Fon\obj\x86\Debug\Fon.exe
+C:\Users\user\Documents\Visual Studio 2010\Projects\Fon\Fon\obj\x86\Debug\Fon.pdb
+C:\Users\user\Documents\Visual Studio 2010\Projects\Fon\Fon\bin\Debug\Fon.exe
+C:\Users\user\Documents\Visual Studio 2010\Projects\Fon\Fon\bin\Debug\Fon.pdb
+C:\Users\user\Documents\Visual Studio 2010\Projects\Fon\Fon\obj\x86\Debug\Fon.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2010\Projects\Fon\Fon\obj\x86\Debug\Fon.AddComp.resources
+C:\Users\user\Documents\Visual Studio 2010\Projects\Fon\Fon\obj\x86\Debug\Fon.AddGrop.resources
+C:\Users\user\Documents\Visual Studio 2010\Projects\Fon\Fon\obj\x86\Debug\Fon.Component.resources
+C:\Users\user\Documents\Visual Studio 2010\Projects\Fon\Fon\obj\x86\Debug\Fon.Gropupa.resources
+C:\Users\user\Documents\Visual Studio 2010\Projects\Fon\Fon\obj\x86\Debug\Fon.MyTable.resources
+C:\Users\user\Documents\Visual Studio 2010\Projects\Fon\Fon\obj\x86\Debug\Fon.Properties.Resources.resources
+C:\Users\user\Documents\Visual Studio 2010\Projects\Fon\Fon\obj\x86\Debug\Fon.csproj.GenerateResource.Cache
+C:\Users\user\Documents\Visual Studio 2010\Projects\Fon\Fon\obj\x86\Debug\Fon.List.resources
+C:\Users\user\Documents\Visual Studio 2010\Projects\Fon\Fon\obj\x86\Debug\Fon.ForList.resources
+C:\Users\user\Documents\Visual Studio 2010\Projects\Fon\Fon\bin\Debug\Fon.exe.manifest
+C:\Users\user\Documents\Visual Studio 2010\Projects\Fon\Fon\bin\Debug\Fon.application
+C:\Users\user\Documents\Visual Studio 2010\Projects\Fon\Fon\obj\x86\Debug\Fon.TrustInfo.xml
+C:\Users\user\Documents\Visual Studio 2010\Projects\Fon\Fon\obj\x86\Debug\Fon.exe.manifest
+C:\Users\user\Documents\Visual Studio 2010\Projects\Fon\Fon\obj\x86\Debug\Fon.application

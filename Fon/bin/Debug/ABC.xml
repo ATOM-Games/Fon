@@ -1,0 +1,44 @@
+<INVENTORY>
+  <Group N="Движки" lx="685" ly="6" cr="128" cg="0" cb="255" br="255" bg="255" bb="255" zx="2" zy="1" sh="false">
+    <Comp N="Юнити" P="C:\Program Files (x86)\Unity\Editor\Unity.exe" />
+    <Comp N="АнреалЭнжин" P="C:\Program Files\UnrealEngine4\Engine\Binaries\Win64\UE4Game.exe" />
+    <Comp N="Gs7_LevelEditor" P="C:\Program Files (x86)\GStudio7\wed.exe" />
+  </Group>
+  <Group N="Интересные папки" lx="686" ly="9" cr="200" cg="255" cb="255" br="0" bg="0" bb="0" zx="2" zy="1" sh="false">
+    <Comp N="OS (C)" P="C:\Users\user\Desktop\OS (C)" />
+    <Comp N="Кoрзина" P="C:\Users\user\Desktop\Кoрзина" />
+    <Comp N="Пользователь" P="C:\Users\user" />
+  </Group>
+  <Group N="Удаленное управление" lx="907" ly="6" cr="255" cg="255" cb="0" br="0" bg="128" bb="0" zx="2" zy="1" sh="false">
+    <Comp N="TeamViewer" P="C:\Program Files (x86)\TeamViewer\TeamViewer.exe" />
+  </Group>
+  <Group N="Локалки" lx="1132" ly="6" cr="0" cg="0" cb="255" br="255" bg="0" bb="128" zx="2" zy="2" sh="false">
+    <Comp N="Denwer_start" P="C:\WebServers\denwer\Run.exe" />
+    <Comp N="Denwer_stop" P="C:\WebServers\denwer\Stop.exe" />
+    <Comp N="Denwer_restart" P="C:\WebServers\denwer\Restart.exe" />
+    <Comp N="Ксамп" P="C:\xampp\xampp-control.exe" />
+  </Group>
+  <Group N="Для игрушек" lx="683" ly="173" cr="192" cg="192" cb="192" br="0" bg="128" bb="0" zx="2" zy="1" sh="false">
+    <Comp N="Стим" P="C:\Program Files (x86)\Steam\Steam.exe" />
+    <Comp N="Голубой стек" P="C:\ProgramData\BlueStacks\Client\Bluestacks.exe" />
+  </Group>
+  <Group N="ИГРЫ-Ы-Ы-Ы" lx="906" ly="8" cr="128" cg="255" cb="255" br="255" bg="0" bb="0" zx="2" zy="2" sh="false">
+    <Comp N="МайнКрафт" P="C:\Users\user\AppData\Roaming\.minecraft\TLauncher.exe" />
+    <Comp N="Желе в небе" P="C:\Games\Jelly in the sky v15.06.2017\JellyInTheSky.exe" />
+    <Comp N="Raft" P="C:\Games\Raft Update 9.04\Raft.exe" />
+    <Comp N="РимВорлд" P="C:\Games\RimWorld.v1.0.2150\RimWorldWin64.exe" />
+    <Comp N="КСП" P="C:\Games\Kerbal Space Program\KSP_x64.exe" />
+  </Group>
+  <Group N="Для учебы" lx="460" ly="6" cr="255" cg="255" cb="255" br="0" bg="0" bb="0" zx="2" zy="2" sh="false">
+    <Comp N="По графам программа" P="C:\ABCGames\GPS\GPS.exe" />
+  </Group>
+  <Group N="Полезности виндовские" lx="594" ly="562" cr="255" cg="255" cb="255" br="0" bg="0" bb="0" zx="5" zy="1" sh="false">
+    <Comp N="Проводник" P="C:\Windows\explorer.exe" />
+    <Comp N="Редактор реестра" P="C:\Windows\regedit.exe" />
+    <Comp N="Блокнот" P="C:\Windows\notepad.exe" />
+    <Comp N="Блокнот++" P="C:\Program Files\Notepad++\notepad++.exe" />
+    <Comp N="Панель управления" P="C:\Windows\System32\control.exe" />
+    <Comp N="Калькулятор" P="C:\Windows\System32\calc.exe" />
+    <Comp N="Командная строка" P="C:\Windows\System32\cmd.exe" />
+  </Group>
+</INVENTORY>

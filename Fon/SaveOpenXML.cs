@@ -15,7 +15,7 @@ namespace Fon
         XmlDocument doc = new XmlDocument();
 
         XElement Inv, Grp, Com;
-        List<XAttribute> Atriguts = new List<XAttribute>();
+        List<XAttribute> Attributes = new List<XAttribute>();
 
         static SaveOpenXML(){
             SO_XML = new SaveOpenXML();
@@ -80,29 +80,29 @@ namespace Fon
         public void SaveO(MyTable MT)
         {
             Inv = new XElement("INVENTORY");
-            foreach (Gropupa gr in MT.gr) {
+            foreach (Groups gr in MT.gr) {
                 Grp = new XElement("Group");
-                Atriguts.Add(new XAttribute("N", gr.Zagolovok.Text));
-                Atriguts.Add(new XAttribute("lx", gr.Location.X));
-                Atriguts.Add(new XAttribute("ly", gr.Location.Y));
-                Atriguts.Add(new XAttribute("cr", (int)(gr.BackColor.R)));
-                Atriguts.Add(new XAttribute("cg", (int)(gr.BackColor.G)));
-                Atriguts.Add(new XAttribute("cb", (int)(gr.BackColor.B)));
-                Atriguts.Add(new XAttribute("br", (int)(gr.Zagolovok.ForeColor.R)));
-                Atriguts.Add(new XAttribute("bg", (int)(gr.Zagolovok.ForeColor.G)));
-                Atriguts.Add(new XAttribute("bb", (int)(gr.Zagolovok.ForeColor.B)));
-                Atriguts.Add(new XAttribute("zx", gr.SZ_X));
-                Atriguts.Add(new XAttribute("zy", gr.SZ_Y));
-                Atriguts.Add(new XAttribute("sh", gr.Visible));
-                Grp.Add(Atriguts);
-                Atriguts.Clear();
-                foreach (Component cc in gr.Compot) {
+                Attributes.Add(new XAttribute("N", gr.TittleName.Text));
+                Attributes.Add(new XAttribute("lx", gr.Location.X));
+                Attributes.Add(new XAttribute("ly", gr.Location.Y));
+                Attributes.Add(new XAttribute("cr", (int)(gr.BackColor.R)));
+                Attributes.Add(new XAttribute("cg", (int)(gr.BackColor.G)));
+                Attributes.Add(new XAttribute("cb", (int)(gr.BackColor.B)));
+                Attributes.Add(new XAttribute("br", (int)(gr.TittleName.ForeColor.R)));
+                Attributes.Add(new XAttribute("bg", (int)(gr.TittleName.ForeColor.G)));
+                Attributes.Add(new XAttribute("bb", (int)(gr.TittleName.ForeColor.B)));
+                Attributes.Add(new XAttribute("zx", gr.SZ_X));
+                Attributes.Add(new XAttribute("zy", gr.SZ_Y));
+                Attributes.Add(new XAttribute("sh", gr.Visible));
+                Grp.Add(Attributes);
+                Attributes.Clear();
+                foreach (Component cc in gr.ComponentsList) {
                     Com = new XElement("Comp");
-                    Atriguts.Add(new XAttribute("N", cc.Nane.Text));
-                    Atriguts.Add(new XAttribute("P", cc.Path));
-                    Com.Add(Atriguts);
+                    Attributes.Add(new XAttribute("N", cc.TittleName.Text));
+                    Attributes.Add(new XAttribute("P", cc.Path));
+                    Com.Add(Attributes);
                     Grp.Add(Com);
-                    Atriguts.Clear();
+                    Attributes.Clear();
                 }
                 Inv.Add(Grp);
             }
@@ -114,11 +114,11 @@ namespace Fon
             foreach (XmlElement grop in ListGroup)
             {
                 XmlNodeList ListCom = grop.GetElementsByTagName("Comp");
-                Gropupa G = new Gropupa(MT);
+                Groups G = new Groups(MT);
                 foreach (XmlElement cm in ListCom)
                 {
                     Component c = new Component(cm.GetAttribute("N"), cm.GetAttribute("P"), this.GetIcon(cm.GetAttribute("P"), true).ToBitmap());
-                    G.AdddComp(c);
+                    G.AddComponent(c);
                 }
                 //G.Zagolovok.Text = G.Text = grop.GetAttribute("N");
                 G.Location = new Point(int.Parse(grop.GetAttribute("lx")), int.Parse(grop.GetAttribute("ly")));

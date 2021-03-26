@@ -11,23 +11,23 @@ namespace Fon
 {
     public partial class ForList : UserControl
     {
-        public Gropupa thisGroup;
-        public ForList(Gropupa t) {
+        public Groups thisGroup;
+        public ForList(Groups t) {
             InitializeComponent();
-            t.DluaUdalenia = this;
+            t.For_delete = this;
             this.SetMe(t);
             //OpenClose(t.Visible);
         }
-        public void SetMe(Gropupa t) {
+        public void SetMe(Groups t) {
             this.thisGroup = t;
-            this.NameBut.Text = this.thisGroup.Zagolovok.Text;
-            this.NameBut.ForeColor = this.thisGroup.Zagolovok.ForeColor;
+            this.NameBut.Text = this.thisGroup.TittleName.Text;
+            this.NameBut.ForeColor = this.thisGroup.TittleName.ForeColor;
             this.NameBut.BackColor = this.thisGroup.BackColor;
             this.OpenClose(t.ThisShow);
         }
         public void OpenClose(bool OC) {
             this.thisGroup.Visible = OC;
-            this.VizBut.Text = (OC) ? "●" : "○";
+            this.VizibleBut.Text = (OC) ? "●" : "○";
         }
         private void Naved(object sender, EventArgs A) {
             this.BackColor = System.Drawing.SystemColors.WindowFrame;

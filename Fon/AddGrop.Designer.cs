@@ -15,12 +15,12 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.OKA = new System.Windows.Forms.Button();
-            this.Naz = new System.Windows.Forms.TextBox();
-            this.ColorBut = new System.Windows.Forms.Button();
-            this.CvetBack = new System.Windows.Forms.ColorDialog();
-            this.CvetText = new System.Windows.Forms.ColorDialog();
-            this.ColorBut2 = new System.Windows.Forms.Button();
+            this.OK_button = new System.Windows.Forms.Button();
+            this.TittleName = new System.Windows.Forms.TextBox();
+            this.Color_button = new System.Windows.Forms.Button();
+            this.Color_back = new System.Windows.Forms.ColorDialog();
+            this.Color_text = new System.Windows.Forms.ColorDialog();
+            this.Color_button_2 = new System.Windows.Forms.Button();
             this.TestText = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -37,47 +37,47 @@
             // 
             // OKA
             // 
-            this.OKA.Location = new System.Drawing.Point(318, 76);
-            this.OKA.Name = "OKA";
-            this.OKA.Size = new System.Drawing.Size(75, 23);
-            this.OKA.TabIndex = 6;
-            this.OKA.Text = "OK";
-            this.OKA.UseVisualStyleBackColor = true;
-            this.OKA.Click += new System.EventHandler(this.OKA_Click);
+            this.OK_button.Location = new System.Drawing.Point(318, 76);
+            this.OK_button.Name = "OKA";
+            this.OK_button.Size = new System.Drawing.Size(75, 23);
+            this.OK_button.TabIndex = 6;
+            this.OK_button.Text = "OK";
+            this.OK_button.UseVisualStyleBackColor = true;
+            this.OK_button.Click += new System.EventHandler(this.OKA_Click);
             // 
             // Naz
             // 
-            this.Naz.Location = new System.Drawing.Point(153, 9);
-            this.Naz.Name = "Naz";
-            this.Naz.Size = new System.Drawing.Size(240, 20);
-            this.Naz.TabIndex = 5;
+            this.TittleName.Location = new System.Drawing.Point(153, 9);
+            this.TittleName.Name = "Naz";
+            this.TittleName.Size = new System.Drawing.Size(240, 20);
+            this.TittleName.TabIndex = 5;
             // 
             // ColorBut
             // 
-            this.ColorBut.Location = new System.Drawing.Point(153, 39);
-            this.ColorBut.Name = "ColorBut";
-            this.ColorBut.Size = new System.Drawing.Size(112, 23);
-            this.ColorBut.TabIndex = 7;
-            this.ColorBut.UseVisualStyleBackColor = true;
-            this.ColorBut.Click += new System.EventHandler(this.Color_Click);
+            this.Color_button.Location = new System.Drawing.Point(153, 39);
+            this.Color_button.Name = "ColorBut";
+            this.Color_button.Size = new System.Drawing.Size(112, 23);
+            this.Color_button.TabIndex = 7;
+            this.Color_button.UseVisualStyleBackColor = true;
+            this.Color_button.Click += new System.EventHandler(this.Color_Click);
             // 
             // CvetBack
             // 
-            this.CvetBack.Color = System.Drawing.Color.White;
-            this.CvetBack.FullOpen = true;
+            this.Color_back.Color = System.Drawing.Color.White;
+            this.Color_back.FullOpen = true;
             // 
             // CvetText
             // 
-            this.CvetText.FullOpen = true;
+            this.Color_text.FullOpen = true;
             // 
             // ColorBut2
             // 
-            this.ColorBut2.Location = new System.Drawing.Point(153, 76);
-            this.ColorBut2.Name = "ColorBut2";
-            this.ColorBut2.Size = new System.Drawing.Size(112, 23);
-            this.ColorBut2.TabIndex = 8;
-            this.ColorBut2.UseVisualStyleBackColor = true;
-            this.ColorBut2.Click += new System.EventHandler(this.ColorBut2_Click);
+            this.Color_button_2.Location = new System.Drawing.Point(153, 76);
+            this.Color_button_2.Name = "ColorBut2";
+            this.Color_button_2.Size = new System.Drawing.Size(112, 23);
+            this.Color_button_2.TabIndex = 8;
+            this.Color_button_2.UseVisualStyleBackColor = true;
+            this.Color_button_2.Click += new System.EventHandler(this.ColorBut2_Click);
             // 
             // TestText
             // 
@@ -96,10 +96,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(405, 107);
             this.Controls.Add(this.TestText);
-            this.Controls.Add(this.ColorBut2);
-            this.Controls.Add(this.ColorBut);
-            this.Controls.Add(this.OKA);
-            this.Controls.Add(this.Naz);
+            this.Controls.Add(this.Color_button_2);
+            this.Controls.Add(this.Color_button);
+            this.Controls.Add(this.OK_button);
+            this.Controls.Add(this.TittleName);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
@@ -117,11 +117,11 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button OKA;
-        private System.Windows.Forms.TextBox Naz;
-        private System.Windows.Forms.Button ColorBut;
-        private System.Windows.Forms.ColorDialog CvetBack, CvetText;
-        private System.Windows.Forms.Button ColorBut2;
+        private System.Windows.Forms.Button OK_button;
+        private System.Windows.Forms.TextBox TittleName;
+        private System.Windows.Forms.Button Color_button;
+        private System.Windows.Forms.ColorDialog Color_back, Color_text;
+        private System.Windows.Forms.Button Color_button_2;
         private System.Windows.Forms.Label TestText;
     }
 }

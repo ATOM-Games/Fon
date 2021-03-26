@@ -20,7 +20,7 @@ namespace Fon
         const UInt32 SWP_NOSIZE = 0x0001;
         const UInt32 SWP_NOMOVE = 0x0002;
         const UInt32 SWP_NOACTIVATE = 0x0010;
-        public List<Gropupa> gr = new List<Gropupa>();
+        public List<Groups> gr = new List<Groups>();
         public MyTable(){
             InitializeComponent();
             this.Location = new Point(Screen.PrimaryScreen.WorkingArea.Width - 230, Screen.PrimaryScreen.WorkingArea.Height - 35);
@@ -43,14 +43,14 @@ namespace Fon
         private void MyTable_Deactivate(object Sender, EventArgs ee) { this.Activate(); }
         public void AllShoww() {
             if (gr.Count > 0) {
-                foreach (Gropupa b in gr) { b.SetSizeMe(); b.Show(); }
+                foreach (Groups b in gr) { b.SetSizeMe(); b.Show(); }
             }
         }
 
         private void UpDownBut_Click(object sender, MouseEventArgs e)
         {
             if (((MouseEventArgs)e).Button == System.Windows.Forms.MouseButtons.Right) {
-                this.menua.Show(this, this.PointToClient(new Point(Cursor.Position.X - 140, Cursor.Position.Y - 50)));
+                this.menu_a.Show(this, this.PointToClient(new Point(Cursor.Position.X - 140, Cursor.Position.Y - 50)));
             }
             if (((MouseEventArgs)e).Button == System.Windows.Forms.MouseButtons.Left) {
                 this.CloseOpne(!this.thLish.Visible);
@@ -59,8 +59,8 @@ namespace Fon
 
         private void создатьГруппуToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AddGrop aa = new AddGrop(this, null);
-            aa.Show();
+            AddGrop addGroup = new AddGrop(this, null);
+            addGroup.Show();
         }
 
         private void сохранитьToolStripMenuItem_Click(object sender, EventArgs e)

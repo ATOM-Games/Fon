@@ -11,8 +11,8 @@ namespace Fon
 {
     public partial class Component : UserControl
     {
-        public string Path; public int Skr; Gropupa G=null;
-        public Component(string n, string p, Bitmap b) { InitializeComponent(); this.Nane.Text = n; Path = p; Pica.Image = b; }
+        public string Path; public int Skr; Groups G=null;
+        public Component(string n, string p, Bitmap b) { InitializeComponent(); this.TittleName.Text = n; Path = p; PictureBox_1.Image = b; }
         private void Component_MouseHover(object sender, EventArgs ee) { this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D; }
         private void Component_MouseLeave(object sender, EventArgs ee) { this.BorderStyle = System.Windows.Forms.BorderStyle.None; }
         private void Component_MouseDoubleClick(object sender, MouseEventArgs ee) {
@@ -27,7 +27,7 @@ namespace Fon
             
         }
 
-        private void dvigg(object sender, MouseEventArgs w) {
+        private void Move_window(object sender, MouseEventArgs w) {
             if (this.PointToClient(Cursor.Position).X > this.Location.X && this.PointToClient(Cursor.Position).X < this.Location.X + 100 &&
                 this.PointToClient(Cursor.Position).Y > this.Location.Y && this.PointToClient(Cursor.Position).Y < this.Location.Y + 100)
             {
@@ -36,10 +36,10 @@ namespace Fon
                 this.BorderStyle = System.Windows.Forms.BorderStyle.None;
             }
         }
-        private void Pica_MouseDown(object sender, MouseEventArgs w){
+        private void Picture_MouseDown(object sender, MouseEventArgs w){
             
         }
-        public void SetD(Gropupa h) { this.G = h; }
-        private void Exit_Click(object sender, EventArgs e) { if (G != null) G.Remo(this); }
+        public void SetD(Groups h) { this.G = h; }
+        private void Exit_Click(object sender, EventArgs e) { if (G != null) G.Remove_component(this); }
     }
 }

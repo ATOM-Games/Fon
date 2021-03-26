@@ -16,7 +16,7 @@
         private void InitializeComponent()
         {
             this.NameBut = new System.Windows.Forms.Button();
-            this.VizBut = new System.Windows.Forms.Button();
+            this.VizibleBut = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // NameBut
@@ -34,16 +34,16 @@
             // 
             // VizBut
             // 
-            this.VizBut.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.VizBut.Location = new System.Drawing.Point(191, 1);
-            this.VizBut.Name = "VizBut";
-            this.VizBut.Size = new System.Drawing.Size(36, 36);
-            this.VizBut.TabIndex = 1;
-            this.VizBut.Text = "○●";
-            this.VizBut.UseVisualStyleBackColor = true;
-            this.VizBut.Click += new System.EventHandler(this.VizBut_Click);
-            this.VizBut.MouseEnter += new System.EventHandler(this.Naved);
-            this.VizBut.MouseLeave += new System.EventHandler(this.Otved);
+            this.VizibleBut.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.VizibleBut.Location = new System.Drawing.Point(191, 1);
+            this.VizibleBut.Name = "VizBut";
+            this.VizibleBut.Size = new System.Drawing.Size(36, 36);
+            this.VizibleBut.TabIndex = 1;
+            this.VizibleBut.Text = "○●";
+            this.VizibleBut.UseVisualStyleBackColor = true;
+            this.VizibleBut.Click += new System.EventHandler(this.VizBut_Click);
+            this.VizibleBut.MouseEnter += new System.EventHandler(this.Naved);
+            this.VizibleBut.MouseLeave += new System.EventHandler(this.Otved);
             // 
             // ForList
             // 
@@ -51,7 +51,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Menu;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Controls.Add(this.VizBut);
+            this.Controls.Add(this.VizibleBut);
             this.Controls.Add(this.NameBut);
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "ForList";
@@ -65,7 +65,7 @@
         #endregion
 
         public System.Windows.Forms.Button NameBut;
-        public System.Windows.Forms.Button VizBut;
+        public System.Windows.Forms.Button VizibleBut;
 
     }
 }

@@ -15,27 +15,27 @@ namespace Fon
         #region Windows Form Designer generated code
         private void InitializeComponent()
         {
-            this.Verta = new System.Windows.Forms.VScrollBar();
-            this.Suzanna = new System.Windows.Forms.Panel();
+            this.VerticalScroll = new System.Windows.Forms.VScrollBar();
+            this.BackGround = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // Verta
             // 
-            this.Verta.Dock = System.Windows.Forms.DockStyle.Right;
-            this.Verta.Location = new System.Drawing.Point(230, 0);
-            this.Verta.Name = "Verta";
-            this.Verta.Size = new System.Drawing.Size(20, 400);
-            this.Verta.TabIndex = 0;
-            this.Verta.Visible = false;
-            this.Verta.Scroll += new System.Windows.Forms.ScrollEventHandler(this.Verta_Scroll);
+            this.VerticalScroll.Dock = System.Windows.Forms.DockStyle.Right;
+            this.VerticalScroll.Location = new System.Drawing.Point(230, 0);
+            this.VerticalScroll.Name = "Verta";
+            this.VerticalScroll.Size = new System.Drawing.Size(20, 400);
+            this.VerticalScroll.TabIndex = 0;
+            this.VerticalScroll.Visible = false;
+            this.VerticalScroll.Scroll += new System.Windows.Forms.ScrollEventHandler(this.Verta_Scroll);
             // 
             // Suzanna
             // 
-            this.Suzanna.AutoSize = true;
-            this.Suzanna.Location = new System.Drawing.Point(0, 0);
-            this.Suzanna.Name = "Suzanna";
-            this.Suzanna.Size = new System.Drawing.Size(178, 39);
-            this.Suzanna.TabIndex = 1;
+            this.BackGround.AutoSize = true;
+            this.BackGround.Location = new System.Drawing.Point(0, 0);
+            this.BackGround.Name = "Suzanna";
+            this.BackGround.Size = new System.Drawing.Size(178, 39);
+            this.BackGround.TabIndex = 1;
             // 
             // List
             // 
@@ -43,8 +43,8 @@ namespace Fon
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(250, 400);
-            this.Controls.Add(this.Suzanna);
-            this.Controls.Add(this.Verta);
+            this.Controls.Add(this.BackGround);
+            this.Controls.Add(this.VerticalScroll);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "List";
             this.ShowInTaskbar = false;
@@ -57,7 +57,7 @@ namespace Fon
         //public Dictionary<string, ForList> Compot = new Dictionary<string, ForList>();
         public List<ForList> Compot = new List<ForList>();
         #endregion
-        private System.Windows.Forms.VScrollBar Verta;
-        private System.Windows.Forms.Panel Suzanna;
+        private System.Windows.Forms.VScrollBar VerticalScroll;
+        private System.Windows.Forms.Panel BackGround;
     }
 }

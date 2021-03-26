@@ -17,17 +17,17 @@ namespace Fon
             this.Location = new Point(Screen.PrimaryScreen.WorkingArea.Width-250, Screen.PrimaryScreen.WorkingArea.Height-450);
         }
 
-        public void AddStototam(Gropupa g) {
-            this.Verta.Value = 0;
-            ForList Nw = new ForList(g);
-            this.Compot.Add(Nw);
-            this.Suzanna.Controls.Add(Nw);
+        public void AddGroup(Groups g) {
+            this.VerticalScroll.Value = 0;
+            ForList for_local = new ForList(g);
+            this.Compot.Add(for_local);
+            this.BackGround.Controls.Add(for_local);
             Correct();
         }
         public void Remove(ForList t) {
-            this.Verta.Value = 0;
+            this.VerticalScroll.Value = 0;
             this.Compot.Remove(t);
-            this.Suzanna.Controls.Remove(t);
+            this.BackGround.Controls.Remove(t);
             Correct();
         }
         public void Correct() {
@@ -37,17 +37,17 @@ namespace Fon
                 y++;
             }
             if (35 * this.Compot.Count >= 400) {
-                this.Verta.Maximum = (35 * this.Compot.Count - 400);
-                this.Verta.Enabled = true;
+                this.VerticalScroll.Maximum = (35 * this.Compot.Count - 400);
+                this.VerticalScroll.Enabled = true;
             } else {
-                this.Verta.Enabled = false;
+                this.VerticalScroll.Enabled = false;
             }
         }
         private void Verta_Scroll(object sender, ScrollEventArgs e)
         {
-            foreach (ForList ccc in this.Compot)
+            foreach (ForList for_local in this.Compot)
             {
-                ccc.Location = new Point(0, ccc.Location.X+this.Verta.Value);//  .SetPosme(0,  + this.Verta.Value);
+                for_local.Location = new Point(0, for_local.Location.X+this.VerticalScroll.Value);//  .SetPosme(0,  + this.Verta.Value);
             }
         }
     }

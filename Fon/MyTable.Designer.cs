@@ -19,11 +19,11 @@ namespace Fon
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MyTable));
             this.UpDownBut = new System.Windows.Forms.Button();
-            this.menua = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.menu_a = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.создатьГруппуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.сохранитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menua.SuspendLayout();
+            this.menu_a.SuspendLayout();
             this.SuspendLayout();
             // 
             // UpDownBut
@@ -38,12 +38,12 @@ namespace Fon
             // 
             // menua
             // 
-            this.menua.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menu_a.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.создатьГруппуToolStripMenuItem,
             this.сохранитьToolStripMenuItem,
             this.выходToolStripMenuItem});
-            this.menua.Name = "menua";
-            this.menua.Size = new System.Drawing.Size(159, 92);
+            this.menu_a.Name = "menua";
+            this.menu_a.Size = new System.Drawing.Size(159, 92);
             // 
             // создатьГруппуToolStripMenuItem
             // 
@@ -81,7 +81,7 @@ namespace Fon
             this.Activated += new System.EventHandler(this.MyTable_Activated);
             this.Load += new System.EventHandler(this.MyTable_Load);
             this.LostFocus += new System.EventHandler(this.MyTable_LostFocus);
-            this.menua.ResumeLayout(false);
+            this.menu_a.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -90,7 +90,7 @@ namespace Fon
         public List<System.Windows.Forms.Button> ListButGrop = new List<System.Windows.Forms.Button>();
         public List<System.Windows.Forms.Button> ListButComp = new List<System.Windows.Forms.Button>();
         private System.Windows.Forms.Button UpDownBut;
-        private System.Windows.Forms.ContextMenuStrip menua;
+        private System.Windows.Forms.ContextMenuStrip menu_a;
         private System.Windows.Forms.ToolStripMenuItem создатьГруппуToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem сохранитьToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem выходToolStripMenuItem;

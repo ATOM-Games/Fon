@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.Naz = new System.Windows.Forms.TextBox();
-            this.Pat = new System.Windows.Forms.TextBox();
-            this.OpenFil = new System.Windows.Forms.Button();
-            this.OF = new System.Windows.Forms.OpenFileDialog();
-            this.OKA = new System.Windows.Forms.Button();
+            this.TittleName = new System.Windows.Forms.TextBox();
+            this.Pattion = new System.Windows.Forms.TextBox();
+            this.OpenFile = new System.Windows.Forms.Button();
+            this.OF_dialog = new System.Windows.Forms.OpenFileDialog();
+            this.OK_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -49,52 +49,52 @@
             // 
             // Naz
             // 
-            this.Naz.Location = new System.Drawing.Point(108, 8);
-            this.Naz.Name = "Naz";
-            this.Naz.Size = new System.Drawing.Size(191, 20);
-            this.Naz.TabIndex = 1;
+            this.TittleName.Location = new System.Drawing.Point(108, 8);
+            this.TittleName.Name = "Naz";
+            this.TittleName.Size = new System.Drawing.Size(191, 20);
+            this.TittleName.TabIndex = 1;
             // 
             // Pat
             // 
-            this.Pat.Location = new System.Drawing.Point(108, 40);
-            this.Pat.Name = "Pat";
-            this.Pat.Size = new System.Drawing.Size(191, 20);
-            this.Pat.TabIndex = 2;
+            this.Pattion.Location = new System.Drawing.Point(108, 40);
+            this.Pattion.Name = "Pat";
+            this.Pattion.Size = new System.Drawing.Size(191, 20);
+            this.Pattion.TabIndex = 2;
             // 
             // OpenFil
             // 
-            this.OpenFil.Location = new System.Drawing.Point(305, 8);
-            this.OpenFil.Name = "OpenFil";
-            this.OpenFil.Size = new System.Drawing.Size(75, 52);
-            this.OpenFil.TabIndex = 3;
-            this.OpenFil.Text = "Указать путь вручную";
-            this.OpenFil.UseVisualStyleBackColor = true;
-            this.OpenFil.Click += new System.EventHandler(this.OpenFil_Click);
+            this.OpenFile.Location = new System.Drawing.Point(305, 8);
+            this.OpenFile.Name = "OpenFil";
+            this.OpenFile.Size = new System.Drawing.Size(75, 52);
+            this.OpenFile.TabIndex = 3;
+            this.OpenFile.Text = "Указать путь вручную";
+            this.OpenFile.UseVisualStyleBackColor = true;
+            this.OpenFile.Click += new System.EventHandler(this.OpenFile_Click);
             // 
             // OF
             // 
-            this.OF.FileName = "openFileDialog1";
-            this.OF.FileOk += new System.ComponentModel.CancelEventHandler(this.OF_FileOk);
+            this.OF_dialog.FileName = "openFileDialog1";
+            this.OF_dialog.FileOk += new System.ComponentModel.CancelEventHandler(this.OF_FileOk);
             // 
             // OKA
             // 
-            this.OKA.Location = new System.Drawing.Point(305, 63);
-            this.OKA.Name = "OKA";
-            this.OKA.Size = new System.Drawing.Size(75, 23);
-            this.OKA.TabIndex = 4;
-            this.OKA.Text = "OK";
-            this.OKA.UseVisualStyleBackColor = true;
-            this.OKA.Click += new System.EventHandler(this.OKA_Click);
+            this.OK_button.Location = new System.Drawing.Point(305, 63);
+            this.OK_button.Name = "OKA";
+            this.OK_button.Size = new System.Drawing.Size(75, 23);
+            this.OK_button.TabIndex = 4;
+            this.OK_button.Text = "OK";
+            this.OK_button.UseVisualStyleBackColor = true;
+            this.OK_button.Click += new System.EventHandler(this.OK_Click);
             // 
             // AddComp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(392, 96);
-            this.Controls.Add(this.OKA);
-            this.Controls.Add(this.OpenFil);
-            this.Controls.Add(this.Pat);
-            this.Controls.Add(this.Naz);
+            this.Controls.Add(this.OK_button);
+            this.Controls.Add(this.OpenFile);
+            this.Controls.Add(this.Pattion);
+            this.Controls.Add(this.TittleName);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "AddComp";
@@ -108,10 +108,10 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox Naz;
-        private System.Windows.Forms.TextBox Pat;
-        private System.Windows.Forms.Button OpenFil;
-        private System.Windows.Forms.OpenFileDialog OF;
-        private System.Windows.Forms.Button OKA;
+        private System.Windows.Forms.TextBox TittleName;
+        private System.Windows.Forms.TextBox Pattion;
+        private System.Windows.Forms.Button OpenFile;
+        private System.Windows.Forms.OpenFileDialog OF_dialog;
+        private System.Windows.Forms.Button OK_button;
     }
 }

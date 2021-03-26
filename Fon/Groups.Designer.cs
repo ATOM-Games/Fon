@@ -2,7 +2,7 @@
 using System.Drawing;
 namespace Fon
 {
-    partial class Gropupa
+    partial class Groups
     {
         private System.ComponentModel.IContainer components = null;
         protected override void Dispose(bool disposing)
@@ -18,7 +18,7 @@ namespace Fon
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.Verta = new System.Windows.Forms.VScrollBar();
+            this.Vertical_scroll = new System.Windows.Forms.VScrollBar();
             this.Pana = new System.Windows.Forms.Panel();
             this.BSD = new System.Windows.Forms.Button();
             this.BSU = new System.Windows.Forms.Button();
@@ -29,19 +29,19 @@ namespace Fon
             this.новаяТаблицаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.удалитьТаблицуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.редактироватьТаблицуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Zagolovok = new System.Windows.Forms.Label();
+            this.TittleName = new System.Windows.Forms.Label();
             this.Pana.SuspendLayout();
             this.Context.SuspendLayout();
             this.SuspendLayout();
             // 
             // Verta
             // 
-            this.Verta.Dock = System.Windows.Forms.DockStyle.Right;
-            this.Verta.Location = new System.Drawing.Point(269, 0);
-            this.Verta.Name = "Verta";
-            this.Verta.Size = new System.Drawing.Size(15, 261);
-            this.Verta.TabIndex = 100;
-            this.Verta.Scroll += new System.Windows.Forms.ScrollEventHandler(this.Verta_Scroll);
+            this.Vertical_scroll.Dock = System.Windows.Forms.DockStyle.Right;
+            this.Vertical_scroll.Location = new System.Drawing.Point(269, 0);
+            this.Vertical_scroll.Name = "Verta";
+            this.Vertical_scroll.Size = new System.Drawing.Size(15, 261);
+            this.Vertical_scroll.TabIndex = 100;
+            this.Vertical_scroll.Scroll += new System.Windows.Forms.ScrollEventHandler(this.Vertical_Scroll);
             // 
             // Pana
             // 
@@ -136,20 +136,20 @@ namespace Fon
             // 
             // Zagolovok
             // 
-            this.Zagolovok.AutoEllipsis = true;
-            this.Zagolovok.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Zagolovok.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Zagolovok.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Zagolovok.Location = new System.Drawing.Point(0, 0);
-            this.Zagolovok.Name = "Zagolovok";
-            this.Zagolovok.Size = new System.Drawing.Size(269, 25);
-            this.Zagolovok.TabIndex = 101;
-            this.Zagolovok.Text = "A.B.C.";
-            this.Zagolovok.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Zagolovok.Click += new System.EventHandler(this.Zagolovok_Click_1);
-            this.Zagolovok.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Zagolovok_down);
-            this.Zagolovok.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Zagolovok_Click);
-            this.Zagolovok.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Zagolovok_up);
+            this.TittleName.AutoEllipsis = true;
+            this.TittleName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.TittleName.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TittleName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TittleName.Location = new System.Drawing.Point(0, 0);
+            this.TittleName.Name = "Zagolovok";
+            this.TittleName.Size = new System.Drawing.Size(269, 25);
+            this.TittleName.TabIndex = 101;
+            this.TittleName.Text = "A.B.C.";
+            this.TittleName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TittleName.Click += new System.EventHandler(this.Zagolovok_Click_1);
+            this.TittleName.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Zagolovok_down);
+            this.TittleName.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Zagolovok_Click);
+            this.TittleName.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Zagolovok_up);
             // 
             // Gropupa
             // 
@@ -158,9 +158,9 @@ namespace Fon
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.ControlBox = false;
-            this.Controls.Add(this.Zagolovok);
+            this.Controls.Add(this.TittleName);
             this.Controls.Add(this.Pana);
-            this.Controls.Add(this.Verta);
+            this.Controls.Add(this.Vertical_scroll);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -179,8 +179,8 @@ namespace Fon
 
         #endregion
 
-        public List<Component> Compot = new List<Component>();
-        private System.Windows.Forms.VScrollBar Verta;
+        public List<Component> ComponentsList = new List<Component>();
+        private System.Windows.Forms.VScrollBar Vertical_scroll;
         private System.Windows.Forms.Panel Pana;
         private System.Windows.Forms.Button BSD;
         private System.Windows.Forms.Button BSU;
@@ -191,7 +191,7 @@ namespace Fon
         private System.Windows.Forms.ToolStripMenuItem редактироватьТаблицуToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem удалитьТаблицуToolStripMenuItem;
         public System.Windows.Forms.ContextMenuStrip Context;
-        public System.Windows.Forms.Label Zagolovok;
+        public System.Windows.Forms.Label TittleName;
         
     }
 }

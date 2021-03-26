@@ -107,11 +107,11 @@
     <Compile Include="ForList.Designer.cs">
       <DependentUpon>ForList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Gropupa.cs">
+    <Compile Include="Groups.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Gropupa.Designer.cs">
-      <DependentUpon>Gropupa.cs</DependentUpon>
+    <Compile Include="Groups.Designer.cs">
+      <DependentUpon>Groups.cs</DependentUpon>
     </Compile>
     <Compile Include="List.cs">
       <SubType>Form</SubType>
@@ -140,8 +140,8 @@
     <EmbeddedResource Include="ForList.resx">
       <DependentUpon>ForList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Gropupa.resx">
-      <DependentUpon>Gropupa.cs</DependentUpon>
+    <EmbeddedResource Include="Groups.resx">
+      <DependentUpon>Groups.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="List.resx">
       <DependentUpon>List.cs</DependentUpon>

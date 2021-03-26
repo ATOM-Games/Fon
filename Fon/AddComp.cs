@@ -11,40 +11,40 @@ namespace Fon
 {
     public partial class AddComp : Form
     {
-        Gropupa DDD = null;
+        Groups LocalGroup = null;
         Component c = null;
-        public AddComp(Gropupa g)
+        public AddComp(Groups g)
         {
             InitializeComponent();
-            DDD=g;
+            LocalGroup=g;
         }
 
-        private void OpenFil_Click(object sender, EventArgs e)
+        private void OpenFile_Click(object sender, EventArgs e)
         {
-            OF.ShowDialog();
+            OF_dialog.ShowDialog();
         }
 
         private void OF_FileOk(object sender, CancelEventArgs e)
         {
-            Pat.Text = OF.FileName;
+            Pattion.Text = OF_dialog.FileName;
         }
 
-        private void OKA_Click(object sender, EventArgs e)
+        private void OK_Click(object sender, EventArgs e)
         {
-            if (Pat.Text.Length > 0){
-                if (Naz.Text.Length > 0)
+            if (Pattion.Text.Length > 0){
+                if (TittleName.Text.Length > 0)
                 {
-                    c = new Component(Naz.Text, Pat.Text, SaveOpenXML.SOXML().GetIcon(Pat.Text, true).ToBitmap());
-                    DDD.AdddComp(c);
-                    DDD.SetSizeMe();
+                    c = new Component(TittleName.Text, Pattion.Text, SaveOpenXML.SOXML().GetIcon(Pattion.Text, true).ToBitmap());
+                    LocalGroup.AddComponent(c);
+                    LocalGroup.SetSizeMe();
                     this.Close();
                 }
                 else {
-                    char[] N = Pat.Text.ToCharArray();
+                    char[] N = Pattion.Text.ToCharArray();
                     string O="";
                     for(int i = N.Length-1; N[i]!='\\'; O+=N[i], i--);
                     N = O.ToCharArray();
-                    for (int i = N.Length - 1; i>=0; Naz.Text += N[i], i--) ;
+                    for (int i = N.Length - 1; i>=0; TittleName.Text += N[i], i--) ;
                 }
             }
         }
